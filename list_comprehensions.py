@@ -8,7 +8,7 @@ def run():
 
     # print(squares)
 
-    multiples = [x for x in range(1, 1000000) if x % 4 == 0 and x % 6 == 0 and x % 9 == 0]
+    multiples = [x for x in range(1, 1000000, -1) if x % 4 == 0 and x % 6 == 0 and x % 9 == 0]
 
     print(multiples)
 

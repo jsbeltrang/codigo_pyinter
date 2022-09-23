@@ -6,11 +6,6 @@ def divisors(num):
             divisors.append(i)
     return divisors
 
-def execute():
-    num = int(input("Debes ingresar un número: "))
-    print(divisors(num))
-    print("Terminó mi programa")
-
 def run():
     while True:
         try:

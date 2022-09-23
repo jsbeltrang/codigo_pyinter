@@ -12,12 +12,16 @@ def execute():
     print("Terminó mi programa")
 
 def run():
-    try:
-        num = int(input("Inresa un número: "))
-        print(divisors(num))
-        print("Terminó mi programa")
-    except ValueError:
-        execute()
+    while True:
+        try:
+            num = int(input('Ingresa un número: '))
+            if num < 0:
+                raise ValueError
+            print(divisors(num))
+            print("Terminó mi programa")
+            break
+        except ValueError:
+            print("Debes ingresar un entero positivo")
 
 if __name__ == "__main__":
     run()
